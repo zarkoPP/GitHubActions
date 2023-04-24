@@ -1,0 +1,12 @@
+name: environment
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - pip:
+    - tensorflow==2.6.0
