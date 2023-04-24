@@ -11,3 +11,4 @@ dependencies:
   - pip
   - pip:
     - tensorflow==2.6.0
+    - flake8
