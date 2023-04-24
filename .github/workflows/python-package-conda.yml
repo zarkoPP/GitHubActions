@@ -26,7 +26,7 @@ jobs:
         exec "${SHELL}"
         source ~/.bashrc
         conda activate base
-        conda install anaconda-client
+        conda install anaconda-client -n base
 
     - name: Install dependencies
       run: |
