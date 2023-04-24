@@ -22,6 +22,8 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install Anaconda Client
       run: |
+          conda init bash
+          exec "${SHELL}"
           conda activate base
           conda install anaconda-client
     - name: Install dependencies
