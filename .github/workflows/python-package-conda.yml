@@ -18,6 +18,7 @@ jobs:
       run: |
         conda init bash
         exec "${SHELL}"
+        conda env update --file environment.yml --name zarkoPP/base
         # $CONDA is an environment variable pointing to the root of the miniconda directory
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install Anaconda Client
