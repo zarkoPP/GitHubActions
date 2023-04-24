@@ -32,13 +32,10 @@ jobs:
       run: |
         conda install anaconda-client -n base
         conda env update --file ./environment.yml --name zarkoPP-base
-    - name: Install flake8
-      run: |
-        conda install flake8
 
     - name: Lint with flake8
       run: |
-        conda install flake8
+        pip install flake8
         echo 'export PATH="$PATH:/path/to/directory"' >> $HOME/.bashrc
         source $HOME/.bashrc
         # stop the build if there are Python syntax errors or undefined names
