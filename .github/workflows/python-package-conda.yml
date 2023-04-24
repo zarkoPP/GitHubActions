@@ -31,7 +31,7 @@ jobs:
     - name: Install dependencies
       run: |
         conda install anaconda-client -n base
-        conda env update --file ./environment.yml --name zarkoPP/base
+        conda env update --file ./environment.yml --name zarkoPP-base
     - name: Lint with flake8
       run: |
         conda install flake8
