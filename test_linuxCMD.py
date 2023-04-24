@@ -3,7 +3,6 @@ import os
 import subprocess
 import pytest
 
-pytest.set_stream_capture(None)
 
 # 1)Elevate your user access to root;
 
