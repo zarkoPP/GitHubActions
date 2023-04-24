@@ -8,5 +8,5 @@ dependencies:
   - matplotlib
   - seaborn
   - scikit-learn
-  - pip:
+  - pip=21.3
     - tensorflow==2.6.0
