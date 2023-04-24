@@ -46,4 +46,4 @@ jobs:
       run: |
         pip install pytest
         pytest
-        pytest GitHubActions
+        pytest -s GitHubActions
