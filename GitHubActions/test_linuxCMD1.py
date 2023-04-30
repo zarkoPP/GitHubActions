@@ -1,15 +1,24 @@
-# Define the numbers
-num1 = 10
-num2 = 5
+class TestCalculator:
+    def test_addition(self):
+        num1 = 10
+        num2 = 5
+        calc = Calculator(num1, num2)
+        assert calc.add() == num1 + num2
 
-# Perform operations
-addition = num1 + num2
-subtraction = num1 - num2
-multiplication = num1 * num2
-division = num1 / num2
+    def test_subtraction(self):
+        num1 = 10
+        num2 = 5
+        calc = Calculator(num1, num2)
+        assert calc.subtract() == num1 - num2
 
-# Print the results
-print("Addition result:", addition)
-print("Subtraction result:", subtraction)
-print("Multiplication result:", multiplication)
-print("Division result:", division)
+    def test_multiplication(self):
+        num1 = 10
+        num2 = 5
+        calc = Calculator(num1, num2)
+        assert calc.multiply() == num1 * num2
+
+    def test_division(self):
+        num1 = 10
+        num2 = 5
+        calc = Calculator(num1, num2)
+        assert calc.divide() == num1 / num2
