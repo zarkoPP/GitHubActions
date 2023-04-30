@@ -1,26 +1,7 @@
-from calculator import Calculator
+def add(a, b):
+    return a + b
 
-class TestCalculator:
-    def test_addition(self):
-        num1 = 10
-        num2 = 5
-        calc = Calculator(num1, num2)
-        assert calc.add() == num1 + num2
-
-    def test_subtraction(self):
-        num1 = 10
-        num2 = 5
-        calc = Calculator(num1, num2)
-        assert calc.subtract() == num1 - num2
-
-    def test_multiplication(self):
-        num1 = 10
-        num2 = 5
-        calc = Calculator(num1, num2)
-        assert calc.multiply() == num1 * num2
-
-    def test_division(self):
-        num1 = 10
-        num2 = 5
-        calc = Calculator(num1, num2)
-        assert calc.divide() == num1 / num2
+def test_add():
+    assert add(2, 3) == 5
+    assert add(-1, 1) == 0
+    assert add(0, 0) == 0
