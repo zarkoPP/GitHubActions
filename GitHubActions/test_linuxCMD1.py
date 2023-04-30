@@ -1,4 +1,4 @@
-from your_module_name import Calculator
+from calculator import Calculator
 
 class TestCalculator:
     def test_addition(self):
