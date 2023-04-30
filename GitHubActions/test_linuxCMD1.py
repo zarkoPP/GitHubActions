@@ -1,3 +1,5 @@
+from your_module_name import Calculator
+
 class TestCalculator:
     def test_addition(self):
         num1 = 10
